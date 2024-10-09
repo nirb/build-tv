@@ -4,6 +4,7 @@ function fetchAndDisplayText(url, elementId) {
         .then(text => {
             const element = document.getElementById(elementId);
             element.textContent = text;
+            console.log("got",text)
         })
         .catch(error => {
             console.error("Error fetching text:", error);
